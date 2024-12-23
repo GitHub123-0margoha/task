@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task</title>
+    <style>
+        body {
+            background-color: #bde2d5;
+        }
+        .main {
+            width: 700px;
+            margin: 50px auto;
+            background-color: white;
+            border-radius: 8px;
+            padding: 20px;
+            overflow: hidden;
+        }
+        .main form {
+            width: 100%;
+        }
+        .main .Names {
+            display: flex;
+            justify-content: space-between;
+        }
+        .main .Names div {
+            width: 49%;
+            margin-bottom: 20px;
+        }
+        .main .Names label {
+            display: block;
+        }
+        .main label {
+            margin-bottom: 7px;
+            color: gray
+        }
+        
+        .main .Names div input {
+            padding: 5px 8px;
+            width: 97%;
+            border-radius: 5px;
+            outline: none;
+            border: 1px solid #aaa;
+        }
+        .main .mal {
+            display: block;
+        }
+        .main input[type= "email"] {
+            padding: 5px 8px;
+            width: 98%;
+            border-radius: 5px;
+            margin-bottom: 20px;
+            outline: none;
+            border: 1px solid #aaa;
+        }
+        .main .Qur {
+            display: block;
+        }
+        .main .info {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .main .info .uu {
+            width: 47%;
+            padding: 5px 8px;
+            border: 1px solid #aaa;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+        .main .masge{
+            display: block;
+        }
+        .main textarea {
+            width: 97%;
+            outline: none;
+            resize: none;
+            min-height: 80px;
+            border-radius: 7px;
+            padding: 10px;
+            display: block;
+            border: 1px solid #aaa;
+            margin-bottom: 20px;
+            overflow: auto;
+        }
+        .main .ask {
+            margin-left: 10px;
+        }
+        .main input[type="submit"] {
+            display: block;
+            border: none;
+            margin: 20px auto;
+            padding: 15px;
+            background-color: green;
+            width: 100%;
+            color: white;
+            font-size: 17px;
+            border-radius: 6px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <h2>Contact Us</h2>
+        <form action="">
+            <div class="Names">
+                <div>
+                    <label for="first">First Name</label>
+                    <input type="text" id="first" name="First Name">
+                </div>
+                <div class="las">
+                    <label for="last">Last Name</label>
+                    <input type="text" id="last" name="Last Name">
+                </div>
+            </div>
+            <label class="mal" for="mail">Email Address</label>
+            <input type="email" name="mail" id="mail">
+            <label class="Qur">Query Type</label>
+            <div class="info">
+                <div class="uu">
+                    <input type="radio" id="General" name="General" value="General Enquiry" >
+                    <label for="General">General Enquiry</label>
+                </div>
+                <div class="uu">
+                    <input type="radio" id="Support" name="General" value="Support Request"  >
+                    <label for="Support">Support Request</label>
+                </div>
+            </div>
+            <label class="masge" for="massage">Massage</label>
+            <textarea name="" id="massage"></textarea>
+            <input type="checkbox" id="check">
+            <label class="ask" for="check">I Consent To being By the Team</label>
+            <input type="submit">
+        </form>
+    </div>
+</body>
+</html>
